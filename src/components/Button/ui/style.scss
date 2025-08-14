@@ -1,0 +1,112 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &__icon-left,
+  &__icon-right {
+    width: 20px;
+    height: 20px;
+  }
+
+  
+  &--L {
+    height: 48px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  &--M {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  &--S {
+    height: 24px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  // ===== Цветовые темы =====
+  &--primary {
+    &.btn--default {
+      background-color: #272733;
+      color: #fff;
+    }
+    &.btn--hover {
+      background-color: #000;
+      color: #fff;
+    }
+    &.btn--press {
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    &.btn--focus {
+      background-color: #272733;
+      color: #fff;
+      outline: 2px solid #4C7CFF;
+    }
+    &.btn--disabled {
+      background-color: #F0F0F0;
+      color: #A0A0A0;
+      cursor: not-allowed;
+    }
+  }
+
+  &--secondary {
+    &.btn--default {
+      background-color: #EDF2F4;
+      color: #000;
+    }
+    &.btn--hover {
+      background-color: #d9dee0;
+      color: #000;
+    }
+    &.btn--press {
+      background-color: #cfd4d6;
+      color: #000;
+    }
+    &.btn--focus {
+      background-color: #EDF2F4;
+      color: #000;
+      outline: 2px solid #4C7CFF;
+    }
+    &.btn--disabled {
+      background-color: #F0F0F0;
+      color: #A0A0A0;
+      cursor: not-allowed;
+    }
+  }
+
+  &--danger {
+    &.btn--default {
+      background-color: #E52421;
+      color: #fff;
+    }
+    &.btn--hover {
+      background-color: #cc1f1c;
+      color: #fff;
+    }
+    &.btn--press {
+      background-color: #b51b18;
+      color: #fff;
+    }
+    &.btn--focus {
+      background-color: #E52421;
+      color: #fff;
+      outline: 2px solid #4C7CFF;
+    }
+    &.btn--disabled {
+      background-color: #F0F0F0;
+      color: #A0A0A0;
+      cursor: not-allowed;
+    }
+  }
+}
